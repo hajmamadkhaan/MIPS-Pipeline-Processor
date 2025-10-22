@@ -16,6 +16,8 @@ module tb_InstructionFetch;
         .clk(clk),
         .branchTarget(branchTarget),
         .muxSel(muxSel)
+        .output_instr(output_instr),
+        .pc_out(pc_out)
     );
 
     // Clock generation: 10 ns period
