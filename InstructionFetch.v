@@ -5,11 +5,11 @@ module InstructionFetch(
     input wire clk,
     input wire [31:0] branchTarget,
     input wire muxSel,
-    output wire [31:0] output_instr
+    output wire [31:0] output_instr,
+    output wire [31:0] pc_out
     );
 
     wire [31:0] pc_in;
-    wire [31:0] pc_out;
     wire [31:0] muxSourceA;
     
     multiplexer mux(
